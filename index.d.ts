@@ -30,9 +30,9 @@ declare module "panzoom" {
     boundsPadding?: number;
     zoomDoubleClickSpeed?: number;
     zoomSpeed?: number;
-    initialX?: number,
-    initialY?: number,
-    initialZoom?: number,
+    initialX?: number;
+    initialY?: number;
+    initialZoom?: number;
     pinchSpeed?: number;
     beforeWheel?: (e: WheelEvent) => void;
     beforeMouseDown?: (e: MouseEvent) => void;

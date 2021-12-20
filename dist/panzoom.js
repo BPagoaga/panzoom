@@ -694,6 +694,11 @@ function createPanZoom(domElement, options) {
       var point = transformToScreen(offset.x, offset.y);
       mouseX = point.x;
       mouseY = point.y;
+
+      // end of zooming
+      if (multiTouch) {
+        triggerZoomEnd();
+      }
     } else {
       var now = new Date();
       if (now - lastTouchEndTime < doubleTapSpeedInMS) {
@@ -857,7 +862,8 @@ function createPanZoom(domElement, options) {
     zoomToAnimation = animate(from, to, {
       step: function (v) {
         zoomAbs(clientX, clientY, v.scale);
-      }
+      },
+      done: triggerZoomEnd
     });
   }
 

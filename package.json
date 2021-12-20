@@ -1,6 +1,6 @@
 {
-  "name": "panzoom",
-  "version": "9.4.2",
+  "name": "@bpagoagadev/panzoom",
+  "version": "9.4.4",
   "description": "Extensible, mobile friendly pan and zoom framework (supports DOM and SVG).",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anvaka/panzoom"
+    "url": "git+https://github.com/bpagoaga/panzoom.git"
   },
   "dependencies": {
     "amator": "^1.1.0",
@@ -31,5 +31,13 @@
     "jsdom": "^16.3.0",
     "tap": "^15.0.6",
     "uglify-js": "^3.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/bpagoaga/panzoom/issues"
+  },
+  "homepage": "https://github.com/bpagoaga/panzoom#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
